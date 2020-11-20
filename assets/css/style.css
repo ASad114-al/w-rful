@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300600700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  word-spacing: 7px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  cursor: pointer;
+}
+
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input, textarea {
+  outline: none;
+}
+
+ul, ol, dd {
+  list-style: none;
+}
+
+cite {
+  font-style: normal;
+}
+
+body {
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background: url("../img/cardhands.png") center center/cover no-repeat scroll;
+  min-height: 100vh;
+}
+
+.btn {
+  background: #f5f6fa;
+  color: #545454;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  min-width: 15%;
+  padding: .375rem .75rem;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+  margin: 8px 0;
+}
+
+#customInput {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 30%;
+}
+
+.active-button {
+  background: #37a003;
+  color: white;
+}
+
+#rollResult {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.roll {
+  background-color: #37a003;
+  color: white;
+  padding: 12px 34px;
+  margin-bottom: 110px;
+}
+
+.roll:hover {
+  background: #2b7d03;
+}
+
+small {
+  color: white;
+  font-family: 'Open Sans', serif;
+  font-weight: 300;
+}
+
+#sidesPresets, form {
+  margin-bottom: 26px;
+}
+
+.swirl {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 802px) {
+  .container {
+    margin: 0;
+  }
+  #customInput {
+    width: 50%;
+  }
+  .roll {
+    width: 50%;
+  }
+  #sidesPresets {
+    margin: 0 7%;
+  }
+}
+
+@media only screen and (max-width: 437px) {
+  .container {
+    margin: 0;
+  }
+  #customInput {
+    width: 75%;
+  }
+  .roll {
+    width: 75%;
+  }
+  #sidesPresets {
+    margin: 0 7%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

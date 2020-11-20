@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+   
+    <main class="container">
+        <h1>Roll Dice</h1>
+
+        <div id="rollResult">
+            <!-- Animation html tags -->
+            <div class="second">
+            <div id="spinTarget">
+                <div class="cube">
+                  <div class="side front" id="frontFace">1</div>
+                  <div class="side back">2</div>
+                  <div class="side right">3</div>
+                  <div class="side left">4</div>
+                  <div class="side top">5</div>
+                  <div class="side bottom">6</div>
+                </div>
+             </div>
+            </div>
+
+             <!-- static result -->
+            <div class="third"></div>
+        
+        </div>
+        <small>Use the presets below to select the number of sides</small>
+        <div id="sidesPresets">   
+            <a href="#" class="btn preset">4</a>
+            <a href="#" class="btn preset">6</a>
+            <a href="#" class="btn preset">8</a>
+            <a href="#" class="btn preset">12</a>
+        </div>
+
+        <form action="return false">
+            <input type="number" id="customInput" onfocus="resetPresetValue()" placeholder="Enter custom number here">
+        </form>
+        <a href="#" class="btn roll" onclick="genRandomNum()">Click me to roll!</a>
+        <img src="assets/img/swirl.svg" alt="swirl" class="swirl">
+        
+
+    </main>
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

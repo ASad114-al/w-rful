@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300600700&display=swap')
+
+// reset styles
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+h1
+    margin: 0
+    color: white
+    font-family: 'Bitter', serif
+    font-weight: 700
+    font-size: 3rem
+    letter-spacing: 3px
+    word-spacing: 7px
+p
+    margin: 0
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    display: inline-block
+button
+    background-color: transparent
+    color: inherit
+    border-width: 0
+    cursor: pointer
+input
+    box-sizing: border-box
+input, textarea
+    outline: none
+ul, ol, dd
+    list-style: none
+cite
+    font-style: normal
+
+
+// variables Convert to hsl here: https://www.w3schools.com/colors/colors_converter.asp
+$primary: hsl(208, 63%, 27%)
+$secondary: hsl(100, 96%, 32%)
+$accent: hsl(0, 100%, 25%)
+$neutral: hsl(228, 33%, 97%)
+
+// global styles
+body
+    padding-top: 50px
+    font-family: 'Open Sans', sans-serif
+    text-align: center
+    background: url("../img/cardhands.png") center center / cover no-repeat scroll
+    min-height: 100vh
+    
+
+// mixins
+
+=sassBtn($bg, $col, $fs, $lh, $minWth)
+    background: $bg
+    color: $col
+    font-size: $fs
+    line-height: $lh    // use to set xy pad
+    min-width: $minWth
+    // base btn styles
+    padding: .375rem .75rem
+    display: inline-block
+    cursor: pointer
+    text-align: center
+    border-radius: 4px
+    font-weight: 700
+    user-select: none
+    vertical-align: middle
+    white-space: nowrap
+    transition: color .5s ease,
+    background-color .5s ease, 
+    border-color .5s ease
+
+
+=tameTextInput
+    width: 75%
+    padding: 12px 20px
+    margin: 8px 0
+    display: inline-block
+    border: 1px solid #ccc
+    border-radius: 4px
+    box-sizing: border-box
+    font-size: 1.2rem
+
+// fran basic styles
+.btn 
+    @include sassBtn($neutral, hsl(0, 0%, 33%), 1.2rem, 1.5, 15%)
+    margin: 8px 0
+#customInput
+    @include tameTextInput
+    text-align: center
+.container
+    margin: 0 30%
+.active-button
+    background: $secondary 
+    color: white 
+#rollResult
+    font-weight: 700
+    font-size: 3rem
+
+img
+    width: 100%
+    height: auto
+    
+
+.roll 
+    background-color: $secondary
+    color: white
+    &:hover
+        background: darken($secondary,7 )
+    padding: 12px 34px
+    margin-bottom: 110px
+
+
+small
+    color: white
+    font-family: 'Open Sans', serif
+    font-weight: 300     
+
+#sidesPresets, form
+    margin-bottom: 26px
+
+.swirl
+    width: 50%
+    display: block
+    margin: 0 auto
+   
+
+@media only screen and (max-width: 802px) 
+  .container 
+    margin: 0
+  
+  #customInput 
+    width: 50%
+  
+  .roll 
+    width: 50%
+  
+  #sidesPresets 
+    margin: 0 7%
+  
+
+
+@media only screen and (max-width: 437px) 
+  .container 
+    margin: 0
+  
+  #customInput 
+    width: 75%
+  
+  .roll 
+    width: 75%
+  
+  #sidesPresets 
+    margin: 0 7%
+  
